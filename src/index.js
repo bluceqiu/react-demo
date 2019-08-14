@@ -1,7 +1,6 @@
 import React from './react/core'
 
 let aaa = React.createElement('div', {name: 'name'}, '你好', React.createElement('button', {name:'btn', onclick:function(){alert(1)} }, '按钮'));
-
 class subCounter extends React.Components{
     constructor(props){
         super(props);
@@ -39,4 +38,4 @@ class Counter extends React.Components{
 let bbb = React.createElement(Counter, {name: 'counter'});
 
 // 前面少了一步由 <Counter name='couter'/>  -> 转换为AST的时候，   转换为React.createElement 的形式
-React.render(bbb, document.getElementById('root'))
+React.render(bbb, document.getElementById('root'));
