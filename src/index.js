@@ -2,8 +2,9 @@ import React from './react/core'
 
 let aaa = React.createElement('div', {name: 'name'}, '你好', React.createElement('button', {name:'btn', onclick:function(){alert(1)} }, '按钮'));
 
-class subCounter{
+class subCounter extends React.Components{
     constructor(props){
+        super(props);
         this.state = {name: 'son'}
     }
     componentWillMount(){
